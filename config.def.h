@@ -34,7 +34,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "wbg", "/path/to/your/image", NULL,
+        "wbg", "/home/pablo/Pictures/Background/wp.jpg", NULL,
         NULL /* terminate */
 };
 
@@ -72,6 +72,7 @@ static const struct xkb_rule_names xkb_rules = {
 	/* example:
 	.options = "ctrl:nocaps",
 	*/
+	.layout = "latam",
 	.options = NULL,
 };
 
@@ -135,7 +136,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 
 /* commands */
 static const char *termcmd[] = { "foot", NULL };
-static const char *menucmd[] = { "wmenu-run", NULL };
+static const char *menucmd[] = { "fuzzel", NULL };
 
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: c -> C, 2 -> at, etc. */
